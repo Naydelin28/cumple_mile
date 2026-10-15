@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body class="pagina-principal">
+    
+    <!-- Fondo con confeti animado -->
+    <div class="confeti-fondo">
+        <div class="confeti-item" style="left:10%; animation-delay:0s;">🎈</div>
+        <div class="confeti-item" style="left:20%; animation-delay:1s;">🎉</div>
+        <div class="confeti-item" style="left:30%; animation-delay:2s;">⭐</div>
+        <div class="confeti-item" style="left:40%; animation-delay:0.5s;">🎊</div>
+        <div class="confeti-item" style="left:50%; animation-delay:1.5s;">💖</div>
+        <div class="confeti-item" style="left:60%; animation-delay:2.5s;"></div>
+        <div class="confeti-item" style="left:70%; animation-delay:0.8s;">✨</div>
+        <div class="confeti-item" style="left:80%; animation-delay:1.8s;">🎁</div>
+        <div class="confeti-item" style="left:90%; animation-delay:2.2s;"></div>
+    </div>
+
+    <div class="container-principal">
+        <!-- Título grandote -->
+        <h1 class="titulo-grande">
+            <span class="letra">¡</span>
+            <span class="letra">F</span>
+            <span class="letra">e</span>
+            <span class="letra">l</span>
+            <span class="letra">i</span>
+            <span class="letra">z</span>
+        </h1>
+        <h1 class="titulo-grande">
+            <span class="letra">C</span>
+            <span class="letra">u</span>
+            <span class="letra">m</span>
+            <span class="letra">p</span>
+            <span class="letra">l</span>
+            <span class="letra">e</span>
+            <span class="letra">a</span>
+            <span class="letra">ñ</span>
+            <span class="letra">o</span>
+            <span class="letra">s</span>
+            <span class="letra">!</span>
+        </h1>
+        <p class="subtitulo">Para: <span class="nombre-destacado">Milesita</span> 🎂</p>
+
+        <!-- Globitos interactivos -->
+        <div class="globos-container">
+            <div class="globo globo-1" onclick="abrirMensaje(1)">
+                <span class="globo-texto">1</span>
+                <div class="hilo"></div>
+            </div>
+            <div class="globo globo-2" onclick="abrirMensaje(2)">
+                <span class="globo-texto">2</span>
+                <div class="hilo"></div>
+            </div>
+            <div class="globo globo-3" onclick="abrirMensaje(3)">
+                <span class="globo-texto">3</span>
+                <div class="hilo"></div>
+            </div>
+            <div class="globo globo-4" onclick="abrirMensaje(4)">
+                <span class="globo-texto">4</span>
+                <div class="hilo"></div>
+            </div>
+            <div class="globo globo-5" onclick="abrirMensaje(5)">
+                <span class="globo-texto">5</span>
+                <div class="hilo"></div>
+            </div>
+        </div>
+
+        <p class="instruccion">👆 Presiona un globito a la vez para descubrir un mensaje!</p>
+
+        <!-- Cajita con enlace a la segunda página -->
+        <div class="caja-sorpresa">
+            <p> ¿Lista para más sorpresas?</p>
+            <a href="index2.html" class="boton-siguiente">
+                ¡Ver mi sorpresa especial! 🎂✨
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal para mensajes -->
+    <div class="modal-overlay" id="modalOverlay" onclick="cerrarMensaje()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <button class="modal-cerrar" onclick="cerrarMensaje()">✕</button>
+            <img id="modalImagen" src="" alt="Imagen" class="modal-imagen">
+            <p id="modalTexto" class="modal-texto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

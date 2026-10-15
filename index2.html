@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Sorpresa Especial!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pagina-dos">
+
+    <!-- AUDIO OCULTO -->
+    <audio id="audioCumple" loop>
+        <source src="cumple.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- VENTANITA DE BIENVENIDA (aparece al cargar) -->
+    <div class="modal-bienvenida" id="modalBienvenida">
+        <div class="modal-bienvenida-contenido">
+            <h2>🎉 ¡Una sorpresa más! 🎉</h2>
+            <p>Antes de continuar, dale play a la música </p>
+            <button class="boton-reproducir" id="btnReproducir" onclick="reproducirYSeguir()">
+                ▶️ Reproducir música
+            </button>
+        </div>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL (oculto al inicio) -->
+    <div class="container" id="contenidoPrincipal" style="display: none;">
+        <h1 class="titulo">¡Feliz Cumpleaños!</h1>
+        <p class="nombre">Para: Milesita 🎂</p>
+        
+        <div class="descripcion">
+            <p>Eres una persona increíble, siempre iluminas los días con tu sonrisa y tu alegría. ¡Gracias por existir!</p>
+            <p>Que este día esté lleno de amor, risas y momentos inolvidables. 💖</p>
+        </div>
+
+        <div class="pastel">
+            <div class="vela">
+                <div class="fuego" id="fuego"></div>
+            </div>
+            <div class="torta"></div>
+        </div>
+
+        <div class="flores">
+            <div class="flor"></div>
+            <div class="flor">🌺</div>
+            <div class="flor">🌷</div>
+            <div class="flor">🌹</div>
+            <div class="flor"></div>
+        </div>
+
+        <!-- Botón para pausar/reproducir (aparece después) -->
+        <div class="audio-control" id="audioControl" style="display: none;">
+            <button class="boton-audio" id="btnAudio" onclick="toggleAudio()">
+                ⏸️ Pausar música
+            </button>
+        </div>
+
+        <button class="boton-soplar" onclick="soplarVela()">¡Sopla la vela!</button>
+        
+        <div class="mensaje-secreto" id="mensajeSecreto">
+            <p>¡Que todos tus deseos se hagan realidad! ✨</p>
+        </div>
+
+        <a href="index.html" class="boton-volver">← Volver al inicio</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
