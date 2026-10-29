@@ -1,23 +1,23 @@
 // ========== MENSAJES DE LOS GLOBITOS ==========
 const mensajes = {
     1: {
-        texto: " Eres la persona más especial del mundo. Tu sonrisa ilumina cada día. ¡Te quiero muchísimo!",
+        texto: " 🎂 Feliz cumple chiquita, te deseo lo mejor del mundo y que la pases increible. Te quiero muchísimoo!",
         imagen: "imagenes/imagen1.jpg"
     },
     2: {
-        texto: " Cada momento contigo es un regalo. Gracias por existir y hacer mi vida más bonita.",
+        texto: "💖Cada momento contigo es un goce. Gracias por existir y hacer mi vida más bonita con los dias que pasan✨",
         imagen: "imagenes/imagen2.jpg"
     },
     3: {
-        texto: "🎉 Hoy celebramos tu vida, tu alegría y todo lo maravilloso que eres. ¡Feliz cumpleaños!",
+        texto: "🎉 Hoy celebramos tu vida, tu alegría y todo lo maravilloso que eres. ¡Feliz cumpleaños Milary <3!",
         imagen: "imagenes/imagen3.jpg"
     },
     4: {
-        texto: "✨ Que todos tus sueños se hagan realidad este año. Te mereces todo lo bonito del mundo.",
+        texto: "✨ Que todos tus sueños se hagan realidad este año y lo que te propongas lo logres. Te mereces todo lo bonito del mundoo, te amamos con neguito <3.",
         imagen: "imagenes/imagen4.jpg"
     },
     5: {
-        texto: "🎂 Eres única, irrepetible y muy amada. ¡Que este día esté lleno de magia y felicidad!",
+        texto: "🎂 Se te quiere demasiado aunque hagas tonteras igual se te quiere jaja. Sigue siendo como eres, que eso te hace unica <3",
         imagen: "imagenes/imagen5.jpg"
     }
 };
@@ -65,7 +65,7 @@ function toggleAudio() {
         audioReproduciendo = true;
     } else {
         audio.pause();
-        boton.innerHTML = '▶️ Reproducir música';
+        boton.innerHTML = '▶ Aplasta Aqui';
         audioReproduciendo = false;
     }
 }
